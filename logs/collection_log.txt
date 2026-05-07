@@ -1,0 +1,80 @@
+[2026-05-06 19:16:50] =======================================================
+[2026-05-06 19:16:50] HANTAVIRUS TRACKER — Data Collection Started
+[2026-05-06 19:16:50] =======================================================
+[2026-05-06 19:16:50] Starting WHO RSS collection...
+[2026-05-06 19:16:51] WARNING: WHO RSS feed may have issues.
+[2026-05-06 19:16:51] WHO RSS: Found 0 Hantavirus-related entries.
+[2026-05-06 19:16:51] Starting ProMED RSS collection...
+[2026-05-06 19:16:51] ProMED RSS: Found 0 Hantavirus-related entries.
+[2026-05-06 19:16:51] Total unique records collected: 0
+[2026-05-06 19:16:51] No data to save for hantavirus_raw. Skipping.
+[2026-05-06 19:16:51] Collection run complete.
+[2026-05-06 19:16:51] =======================================================
+[2026-05-07 09:25:26] =======================================================
+[2026-05-07 09:25:26] HANTAVIRUS TRACKER — Collection Run Started
+[2026-05-07 09:25:26] =======================================================
+[2026-05-07 09:25:26] ── SOURCE 1: WHO News RSS ──────────────────────
+[2026-05-07 09:25:27] WHO RSS status: 200
+[2026-05-07 09:25:27] WHO RSS: 0 Hantavirus entries found out of 25 total.
+[2026-05-07 09:25:27] ── SOURCE 2: WHO DON Page Scraper ──────────────
+[2026-05-07 09:25:28] WHO DON page status: 200
+[2026-05-07 09:25:28] WHO DON scraper: 0 unique Hantavirus links found.
+[2026-05-07 09:25:28] ── SOURCE 3: CDC Open Data API ─────────────────
+[2026-05-07 09:25:29] CDC API status: 200
+[2026-05-07 09:25:29] CDC: No keyword matches — saving all 1000 records for manual review.
+[2026-05-07 09:25:29] CDC API: 1000 records collected.
+[2026-05-07 09:25:29] Total unique records: 1
+[2026-05-07 09:25:29]   WHO RSS:     0
+[2026-05-07 09:25:29]   WHO DON:     0
+[2026-05-07 09:25:29]   CDC API:     1000
+[2026-05-07 09:25:29] Saved 1 records → ../data/raw/hantavirus_raw_2026-05-07_0900.csv
+[2026-05-07 09:25:29] Collection run complete.
+[2026-05-07 09:25:29] =======================================================
+[2026-05-07 09:37:51] =======================================================
+[2026-05-07 09:37:51] HANTAVIRUS TRACKER — Collection Run Started
+[2026-05-07 09:37:51] =======================================================
+[2026-05-07 09:37:51] ── SOURCE 1: WHO News RSS ──────────────────────
+[2026-05-07 09:37:51] WHO RSS: 0 matches from 25 total entries.
+[2026-05-07 09:37:51] ── SOURCE 2: WHO DON Report Pages ─────────────
+[2026-05-07 09:37:52]   DON page 6-DON599 → HTTP 200
+[2026-05-07 09:37:52]   ✅ Scraped: Hantavirus cluster linked to cruise ship travel, Multi-count
+[2026-05-07 09:37:52] WHO DON pages: 1 reports collected.
+[2026-05-07 09:37:52] ── SOURCE 3: CDC Open Data API ─────────────────
+[2026-05-07 09:37:52] CDC filtered API status: 400
+[2026-05-07 09:37:52] CDC filtered query returned 0 — trying fallback...
+[2026-05-07 09:37:53] CDC fallback: 0 hantavirus matches from manual filter.
+[2026-05-07 09:37:53] CDC API: 0 records collected.
+[2026-05-07 09:37:53] -------------------------------------------------------
+[2026-05-07 09:37:53] SUMMARY:
+[2026-05-07 09:37:53]   WHO RSS:       0 records
+[2026-05-07 09:37:53]   WHO DON pages: 1 records
+[2026-05-07 09:37:53]   CDC API:       0 records
+[2026-05-07 09:37:53]   Total unique:  1 records
+[2026-05-07 09:37:53] -------------------------------------------------------
+[2026-05-07 09:37:53] ✅ Saved 1 records → ../data/raw/hantavirus_raw_2026-05-07_0900.csv
+[2026-05-07 09:37:53] Collection run complete.
+[2026-05-07 09:37:53] =======================================================
+[2026-05-07 14:35:43] =======================================================
+[2026-05-07 14:35:43] HANTAVIRUS TRACKER — Collection Run Started
+[2026-05-07 14:35:43] =======================================================
+[2026-05-07 14:35:43] ── SOURCE 1: WHO News RSS ──────────────────────
+[2026-05-07 14:35:44] WHO RSS: 0 matches from 25 total entries.
+[2026-05-07 14:35:44] ── SOURCE 2: WHO DON Report Pages ─────────────
+[2026-05-07 14:35:45]   DON page 6-DON599 → HTTP 200
+[2026-05-07 14:35:45]   ✅ Scraped: Hantavirus cluster linked to cruise ship travel, Multi-count
+[2026-05-07 14:35:45] WHO DON pages: 1 reports collected.
+[2026-05-07 14:35:45] ── SOURCE 3: CDC Open Data API ─────────────────
+[2026-05-07 14:35:45] CDC filtered API status: 400
+[2026-05-07 14:35:45] CDC filtered query returned 0 — trying fallback...
+[2026-05-07 14:35:46] CDC fallback: 0 hantavirus matches from manual filter.
+[2026-05-07 14:35:46] CDC API: 0 records collected.
+[2026-05-07 14:35:46] -------------------------------------------------------
+[2026-05-07 14:35:46] SUMMARY:
+[2026-05-07 14:35:46]   WHO RSS:       0 records
+[2026-05-07 14:35:46]   WHO DON pages: 1 records
+[2026-05-07 14:35:46]   CDC API:       0 records
+[2026-05-07 14:35:46]   Total unique:  1 records
+[2026-05-07 14:35:46] -------------------------------------------------------
+[2026-05-07 14:35:46] ✅ Saved 1 records → ../data/raw/hantavirus_raw_2026-05-07_1400.csv
+[2026-05-07 14:35:46] Collection run complete.
+[2026-05-07 14:35:46] =======================================================
