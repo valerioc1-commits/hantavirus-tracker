@@ -1,45 +1,41 @@
 # =============================================================
 # collect.yml — GitHub Actions Workflow
-# What it does: Runs collect.py every hour automatically
-# Then commits any new data files back to the repository
+# Runs collect.py every hour and commits new data back to repo
 # =============================================================
 
 name: Hourly Hantavirus Data Collection
 
 on:
-  # Run on a schedule — every hour at :00
   schedule:
-    - cron: '0 * * * *'   # "At minute 0 of every hour"
-
-  # Also lets you trigger it manually from GitHub.com
-  # (useful for testing without waiting an hour)
+    - cron: '0 * * * *'
   workflow_dispatch:
+
+# Tell GitHub Actions it's allowed to write to this repo
+permissions:
+  contents: write
 
 jobs:
   collect-data:
-    runs-on: ubuntu-latest   # GitHub provides a free Linux machine
+    runs-on: ubuntu-latest
 
     steps:
 
-      # Step 1: Download your repository onto the GitHub machine
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 2: Install Python 3.11
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # Step 3: Install all libraries from requirements.txt
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Step 4: Run your collection script
       - name: Run data collection
         run: python scripts/collect.py
 
-      # Step 5: Commit and push any new CSV/log files back to GitHub
       - name: Commit new data to repository
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
