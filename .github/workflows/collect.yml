@@ -36,6 +36,9 @@ jobs:
       - name: Run data collection
         run: python scripts/collect.py
 
+      - name: Clean and process data
+        run: python scripts/clean.py
+
       - name: Commit new data to repository
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

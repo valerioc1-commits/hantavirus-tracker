@@ -1,0 +1,23 @@
+[2026-05-07 15:18:51] =======================================================
+[2026-05-07 15:18:51] HANTAVIRUS TRACKER — Data Cleaning Started
+[2026-05-07 15:18:51] =======================================================
+[2026-05-07 15:18:51] Found 2 raw CSV file(s) to process.
+[2026-05-07 15:18:51] Cleaning: hantavirus_raw_2026-05-07_0900.csv
+[2026-05-07 15:18:51]   Loaded 1 rows, 12 columns.
+[2026-05-07 15:18:51]   Cleaned → 1 rows.
+[2026-05-07 15:18:51] Cleaning: hantavirus_raw_2026-05-07_1400.csv
+[2026-05-07 15:18:51]   Loaded 1 rows, 12 columns.
+[2026-05-07 15:18:51]   Cleaned → 1 rows.
+[2026-05-07 15:18:51] Today's snapshot saved → ../data/cleaned/hantavirus_cleaned_2026-05-07.csv
+[2026-05-07 15:18:51]   Removed 1 duplicate rows from master.
+[2026-05-07 15:18:51]   Master dataset updated: 1 total unique records.
+[2026-05-07 15:18:51] -------------------------------------------------------
+[2026-05-07 15:18:51] MASTER DATASET SUMMARY:
+[2026-05-07 15:18:51]   Total records     : 1
+[2026-05-07 15:18:51]   Records with cases: 0
+[2026-05-07 15:18:51]   Records with deaths:0
+[2026-05-07 15:18:51]   Countries found   : 1
+[2026-05-07 15:18:51]   Date range        : nan → nan
+[2026-05-07 15:18:51] -------------------------------------------------------
+[2026-05-07 15:18:51] Cleaning complete.
+[2026-05-07 15:18:51] =======================================================
