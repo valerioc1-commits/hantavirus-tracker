@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hantavirus Outbreak Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #1a1a2e;
+            color: white;
+            min-height: 100vh;
+        }
+        header {
+            background: #16213e;
+            padding: 20px 40px;
+            border-bottom: 2px solid #e94560;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header h1 { font-size: 28px; color: white; }
+        header span { font-size: 32px; }
+        .subtitle {
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 4px;
+        }
+        .stats {
+            display: flex;
+            gap: 20px;
+            padding: 30px 40px;
+            flex-wrap: wrap;
+        }
+        .stat-card {
+            background: #16213e;
+            border: 1px solid #e94560;
+            border-radius: 8px;
+            padding: 20px 30px;
+            min-width: 160px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #e94560;
+        }
+        .stat-card .label {
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        .dashboard-container {
+            padding: 0 40px 40px;
+        }
+        .dashboard-container h2 {
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+        .preview-container {
+            background: #16213e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .preview-container img {
+            width: 100%;
+            display: block;
+        }
+        .btn-container {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+        .btn {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 6px;
+            margin: 0 10px;
+        }
+        .btn-primary {
+            background: #e94560;
+            border: 1px solid #e94560;
+        }
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid #e94560;
+            color: #e94560;
+        }
+        .btn:hover { opacity: 0.85; }
+        .features {
+            display: flex;
+            gap: 20px;
+            padding: 30px 40px;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: #16213e;
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .feature-card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #e94560;
+        }
+        .feature-card p {
+            font-size: 13px;
+            color: #aaa;
+            line-height: 1.6;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 40px 0;
+            color: #ccc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            font-size: 12px;
+            border-top: 1px solid #222;
+            margin-top: 40px;
+        }
+        footer a { color: #e94560; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <span>🦠</span>
+    <div>
+        <h1>Hantavirus Outbreak Tracker</h1>
+        <div class="subtitle">
+            Real-time global tracking &nbsp;|&nbsp;
+            Data from WHO & CDC &nbsp;|&nbsp;
+            Updates hourly via GitHub Actions
+        </div>
+    </div>
+</header>
+
+<div class="stats">
+    <div class="stat-card">
+        <div class="number">11</div>
+        <div class="label">Confirmed Cases</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">4</div>
+        <div class="label">Confirmed Deaths</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">36.4%</div>
+        <div class="label">Case Fatality Rate</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">Andes</div>
+        <div class="label">Primary Strain</div>
+    </div>
+</div>
+
+<div class="dashboard-container">
+    <h2>📊 Interactive Dashboard Preview</h2>
+    <div class="preview-container">
+        <img src="preview.png" alt="Hantavirus Tracker Dashboard Screenshot">
+        <div class="btn-container">
+            <a href="https://app.powerbi.com/links/HEGyAEbtd0?ctid=a0386106-55ff-4f83-afcb-4801b5f09229&pbi_source=linkShare"
+               target="_blank"
+               class="btn btn-primary">
+                🚀 Open Live Dashboard
+            </a>
+            <a href="https://github.com/valerioc1-commits/hantavirus-tracker"
+               target="_blank"
+               class="btn btn-secondary">
+                View on GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+<p class="section-title">⚙️ How It Works</p>
+<div class="features">
+    <div class="feature-card">
+        <h3>📡 Data Collection</h3>
+        <p>Python scripts pull from WHO Disease Outbreak News,
+           WHO RSS feeds, and the CDC Open Data API every hour
+           automatically via GitHub Actions.</p>
+    </div>
+    <div class="feature-card">
+        <h3>🧹 Data Cleaning</h3>
+        <p>Raw text reports are parsed for case counts, deaths,
+           and geographic data. Country names are standardized
+           and dates are formatted for Power BI.</p>
+    </div>
+    <div class="feature-card">
+        <h3>📊 Visualization</h3>
+        <p>Power BI dashboard shows global case distribution,
+           country comparisons, trend lines over time, and
+           interactive filters by country and date.</p>
+    </div>
+    <div class="feature-card">
+        <h3>🔄 Auto-Updates</h3>
+        <p>GitHub Actions runs the full pipeline hourly — no
+           manual intervention needed. All data is versioned
+           and archived in this repository.</p>
+    </div>
+</div>
+
+<footer>
+    Data sourced from
+    <a href="https://www.who.int/emergencies/disease-outbreak-news"
+       target="_blank">WHO Disease Outbreak News</a>
+    and
+    <a href="https://data.cdc.gov" target="_blank">CDC Open Data</a>.
+    Updated hourly. &nbsp;|&nbsp;
+    <a href="https://github.com/valerioc1-commits/hantavirus-tracker"
+       target="_blank">View Source on GitHub</a>
+    &nbsp;|&nbsp; MIT License
+</footer>
+
+</body>
+</html>
