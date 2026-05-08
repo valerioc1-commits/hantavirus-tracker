@@ -1,2 +1,5 @@
 source,data_type,url,title,strain,confirmed_cases,confirmed_deaths,country,state_province,published_date,collected_at,case_fatality_rate,source_file
-WHO_DON,official_don_report,https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON599,"Hantavirus cluster linked to cruise ship travel, Multi-country",Andes,,,Multi-country,,,2026-05-07T14:35:45.105483,,hantavirus_raw_2026-05-07_1400.csv
+WHO_DON_MANUAL,confirmed_outbreak,https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON599,Hantavirus - Critical case - International,Andes,1.0,0.0,Multi-country,,2026-05-04,2026-05-07,0.0,seed_data_manual.csv
+WHO_DON_MANUAL,confirmed_outbreak,https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON599#cluster-total,Hantavirus cluster linked to cruise ship travel - Multi-country,Andes,7.0,3.0,Multi-country,,2026-05-04,2026-05-07,42.9,seed_data_manual.csv
+WHO_DON_MANUAL,confirmed_outbreak,https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON599#argentina,Hantavirus - Andes strain exposure - Argentina,Andes,2.0,1.0,Argentina,,2026-05-04,2026-05-07,50.0,seed_data_manual.csv
+WHO_DON_MANUAL,confirmed_outbreak,https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON599#critical,Hantavirus - Critical case - International,Andes,1.0,0.0,Multi-country,,2026-05-04,2026-05-07,0.0,seed_data_manual.csv
